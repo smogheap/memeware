@@ -1,0 +1,22 @@
+memeware: a web app for making, sharing, and playing silly games
+
+512x256 image - PNG, GIF, or BMP (probably not jpeg)
++-------+-------+
+|       |   B   |  A: Background image
+|   A   +---+---+  B: Object images
+|       | B | C |  C: Logic (reserved)
++-------+---+---+
+
++ background (segments) may scroll
+  - stack for diagonal
+  - several for parallax
+{
+  "scroll": {
+    "x": 0, "y": 0, "w": 256, "h": 128,
+    "speed": 1, "direction": "left"
+  }
+}
+
+
+- noisemaker js?
+- sequencer?
